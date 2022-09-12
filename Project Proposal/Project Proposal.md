@@ -3,7 +3,7 @@
 Dolibarr ERP & CRM is a modular software of business management that adapts to the size of your company (SME, Large companies, Freelancers or associations)
 It's an OpenSource project built by the addition of modules (you only enable the features you need), on a WAMP, MAMP, or LAMP server (Apache, Mysql, PHP for all Operating Systems). 
 ## System Engineering View
-![]()  
+![](https://github.com/SreeharshaMorampudi/SA-Team-5-Dolibarr/blob/main/Project%20Proposal/SA%20PP1.PNG)  
 
 ## Threats in the Operational Environment
 * Uploading Malicious files
