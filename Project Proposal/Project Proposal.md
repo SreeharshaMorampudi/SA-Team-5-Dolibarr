@@ -2,6 +2,7 @@
 ## Hypothetical Operational Environment
 Dolibarr ERP & CRM is a modular software of business management that adapts to the size of your company (SME, Large companies, Freelancers or associations)
 It's an OpenSource project built by the addition of modules (you only enable the features you need), on a WAMP, MAMP, or LAMP server (Apache, Mysql, PHP for all Operating Systems). 
+[Dolibarr Repository] (https://github.com/Dolibarr/dolibarr)
 ## System Engineering View
 ![](https://github.com/SreeharshaMorampudi/SA-Team-5-Dolibarr/blob/main/Project%20Proposal/SA%20PP1.PNG)  
 
@@ -31,9 +32,13 @@ So we have decided to work on this project.
 ## Project Description
 Freelance professionals, foundations, and small businesses looking for CRM and ERP software to help with their business needs might find that Dolibarr is the tool for them. This combined CRM and ERP software allow users to organize and manage different facets of their business like communications, inventory management, orders, contacts, invoice management, and more. Dolibarr can be modified to fit the needs and requirements of the user’s business since it is an open-source platform. Installation, usage, and custom development can be done. Dolibarr users can start using the software with the features that come with it, but as their business needs change they can have more features added on a LAMP, MAMP, or WAMP server (PHP, Mysql, Apache for all Operating Systems). 
 [documentation and usermanual](https://wiki.dolibarr.org/index.php?title=Home) can be found here.
-## License Summary
-Dolibarr is released under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License or (at your option) any later version (GPL-3+).
 
+## License Summary and Contribution Agreement
+Dolibarr is released under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License or (at your option) any later version (GPL-3+).  
+[License Agreement](https://github.com/Dolibarr/dolibarr/blob/develop/COPYING)  
+Anyone can contribute to Dolibarr. There are 468 contributers at this moment with 113,429 commits till date since 2002 as shown below.  
+![]()  
+[Contribution Agreement](https://github.com/Dolibarr/dolibarr/blob/develop/.github/CONTRIBUTING.md)
 ## Security Related History
 * Cross-site Scripting (XSS) - Stored in GitHub repository dolibarr(June 13 2022)
 * In Dolibarr ERP CRM, WYSIWYG Editor module, v2.8.1 to v13.0.2 are affected by a stored XSS vulnerability(15/08/2021) 
