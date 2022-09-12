@@ -1,7 +1,7 @@
 # Project Proposal - Dolibarr
 ## Hypothetical Operational Environment
 Dolibarr ERP & CRM is a modular software of business management that adapts to the size of your company (SME, Large companies, Freelancers or associations)
-It's an OpenSource project built by the addition of modules (you only enable the features you need), on a WAMP, MAMP, or LAMP server (Apache, Mysql, PHP for all Operating Systems). 
+It's an OpenSource project built by the addition of modules (you only enable the features you need), on a WAMP, MAMP, or LAMP server (Apache, Mysql, PHP for all Operating Systems).  
 [Dolibarr Repository] (https://github.com/Dolibarr/dolibarr)
 ## System Engineering View
 ![](https://github.com/SreeharshaMorampudi/SA-Team-5-Dolibarr/blob/main/Project%20Proposal/SA%20PP1.PNG)  
@@ -37,7 +37,7 @@ Freelance professionals, foundations, and small businesses looking for CRM and E
 Dolibarr is released under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License or (at your option) any later version (GPL-3+).  
 [License Agreement](https://github.com/Dolibarr/dolibarr/blob/develop/COPYING)  
 Anyone can contribute to Dolibarr. There are 468 contributers at this moment with 113,429 commits till date since 2002 as shown below.  
-![]()  
+![](https://github.com/SreeharshaMorampudi/SA-Team-5-Dolibarr/blob/main/Project%20Proposal/Contributions.PNG)
 [Contribution Agreement](https://github.com/Dolibarr/dolibarr/blob/develop/.github/CONTRIBUTING.md)
 ## Security Related History
 * Cross-site Scripting (XSS) - Stored in GitHub repository dolibarr(June 13 2022)
