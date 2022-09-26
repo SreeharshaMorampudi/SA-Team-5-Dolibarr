@@ -4,10 +4,10 @@ This is the repository for Team 5 in the Software Assurance class at the Univers
 
 ## Deliverables
 [Project Proposal](https://github.com/SreeharshaMorampudi/SA-Team-5-Dolibarr/blob/main/Project%20Proposal/Project%20Proposal.md)  
-[Requirements for SSE]()  
-[Assurance Cases]()  
-[Designing for SSE]()  
-[Code Analysis]()  
+[Requirements for SSE](https://github.com/SreeharshaMorampudi/SA-Team-5-Dolibarr/blob/main/Requirements%20for%20Software%20Security%20Engineering/Requirements%20for%20system%20security%20engineering.md)  
+[Assurance Cases](https://github.com/SreeharshaMorampudi/SA-Team-5-Dolibarr/blob/main/Assurance%20Cases/Assurance%20Cases.md)  
+[Designing for SSE](https://github.com/SreeharshaMorampudi/SA-Team-5-Dolibarr/blob/main/Assurance%20Cases/Assurance%20Cases.md)  
+[Code Analysis](https://github.com/SreeharshaMorampudi/SA-Team-5-Dolibarr/blob/main/Assurance%20Cases/Assurance%20Cases.md)  
 
 ## Contributors
 [Sreeharsha Morampudi]()  
