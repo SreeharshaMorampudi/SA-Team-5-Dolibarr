@@ -25,7 +25,7 @@ The goal of the hacker is to obtain unauthorized access to the server and steal 
 
 #### Prevention and Security Requirement
 These attacks can be prevented by implementing the following features:
-1.	 Progressive Delays using Captcha/limiting the maximum number of attempts  
+1.   Progressive Delays using Captcha/limiting the maximum number of attempts  
 2.   Session Validation  
 3.   Strong Passwords  
 4.   Multifactor Authentication  
@@ -53,9 +53,9 @@ There is one partner in the client's business who is already a member of the gro
 
 #### Prevention and Security Requirement
 To overcome these attacks the following security features should be implemented. They are:  
-1.	 Inclusion of attributes  
+1. Inclusion of attributes  
 2. Password-protected files
-3.   Docusign for signing the documents 
+3. Docusign for signing the documents 
 
 ### UML Diagram
 ![Case2 Diagram](https://github.com/SreeharshaMorampudi/SA-Team-5-Dolibarr/blob/main/Requirements%20for%20Software%20Security%20Engineering/Usecase2final.drawio.png)
@@ -64,9 +64,9 @@ To overcome these attacks the following security features should be implemented.
 #### Alignment of Security Requirements with Advertised Features
 * Dolibarr follows a different type of log protection to make them unalterable.
      * https://wiki.dolibarr.org/index.php/Module_Unalterable_Archives_-_Logs
-* Dolibarr doesn't support built-in password-protecting documents but can implement using third-party plug-ins.
+* Dolibarr doesn't support built-in password-protected documents sharing but can implement using third-party plug-ins.
 * Documents can be shared using DocuSign to maintain high security to the files shared for collecting a signature. This feature plug-in can be added from Dolistore Marketplace.
-	* https://www.dolistore.com/en/
+     * https://www.dolistore.com/en/
 
 
 
@@ -99,7 +99,7 @@ Few security features to keep the supervisor system secure from attackers are as
 ### Security Related Configuration and Installation Issues
 
 *	Documentation from Dolibarr about the security-related features:
-    * https://wiki.dolibarr.org/index.php?title=Security_information
+        * https://wiki.dolibarr.org/index.php?title=Security_information
 *	Documentation from Dolibarr to set up secure email communications from the system:
 	* https://wiki.dolibarr.org/index.php/Setup_EMails
 *	Documentation from Dolibarr on their Security policy and scope for possible vulnerabilities and contributions:
