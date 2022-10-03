@@ -98,7 +98,7 @@ Few security features to keep the supervisor system secure from attackers are as
 
 ### Security Related Configuration and Installation Issues
 
-*	Documentation from Dolibarr about the security-related features:
+*	Documentation from Dolibarr about the security-related features:  
         * https://wiki.dolibarr.org/index.php?title=Security_information
 *	Documentation from Dolibarr to set up secure email communications from the system:
 	* https://wiki.dolibarr.org/index.php/Setup_EMails
