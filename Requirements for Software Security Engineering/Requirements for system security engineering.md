@@ -16,7 +16,6 @@
 
 ### Case 1
 #### Accessing customer profiles and transactions
-###### [Return to Top](#requirements-for-system-security-engineering)
 
 #### Use Case
 Bank Teller needs access to the customer's profile and transactions whenever an existing customer comes into the bank. The bank teller needs to log into Dolibarr to view profiles. To create a secure login to the system, he should type in the username and password.  
@@ -26,14 +25,14 @@ The goal of the hacker is to obtain unauthorized access to the server and steal 
 
 #### Prevention and Security Requirement
 These attacks can be prevented by implementing the following features:
-1.	 Progressive Delays using Captcha/limiting the maximum number of attempts  
+1.   Progressive Delays using Captcha/limiting the maximum number of attempts  
 2.   Session Validation  
 3.   Strong Passwords  
 4.   Multifactor Authentication  
 5.   Password management  
 
 ### UML Diagram
-![Case1 Diagram]() 
+![Case1 Diagram](https://github.com/SreeharshaMorampudi/SA-Team-5-Dolibarr/blob/main/Requirements%20for%20Software%20Security%20Engineering/usecase1final.drawio.png) 
 
 
 #### Alignment of Security Requirements with Advertised Features
@@ -54,20 +53,20 @@ There is one partner in the client's business who is already a member of the gro
 
 #### Prevention and Security Requirement
 To overcome these attacks the following security features should be implemented. They are:  
-1.	 Inclusion of attributes  
+1. Inclusion of attributes  
 2. Password-protected files
-3.   Docusign for signing the documents 
+3. Docusign for signing the documents 
 
 ### UML Diagram
-![Case2 Diagram]()
+![Case2 Diagram](https://github.com/SreeharshaMorampudi/SA-Team-5-Dolibarr/blob/main/Requirements%20for%20Software%20Security%20Engineering/Usecase2final.drawio.png)
 
 
 #### Alignment of Security Requirements with Advertised Features
 * Dolibarr follows a different type of log protection to make them unalterable.
      * https://wiki.dolibarr.org/index.php/Module_Unalterable_Archives_-_Logs
-* Dolibarr doesn't support built-in password-protecting documents but can implement using third-party plug-ins.
+* Dolibarr doesn't support built-in password-protected documents sharing but can implement using third-party plug-ins.
 * Documents can be shared using DocuSign to maintain high security to the files shared for collecting a signature. This feature plug-in can be added from Dolistore Marketplace.
-	* https://www.dolistore.com/en/
+     * https://www.dolistore.com/en/
 
 
 
@@ -87,7 +86,7 @@ Few security features to keep the supervisor system secure from attackers are as
 2.	The links should be encrypted.
 
 ### UML Diagram
-![Case3 Diagram]()
+![Case3 Diagram](https://github.com/SreeharshaMorampudi/SA-Team-5-Dolibarr/blob/main/Requirements%20for%20Software%20Security%20Engineering/usecase02.drawio.png)
 
 
 #### Alignment of Security Requirements with Advertised Features
@@ -99,8 +98,8 @@ Few security features to keep the supervisor system secure from attackers are as
 
 ### Security Related Configuration and Installation Issues
 
-*	Documentation from Dolibarr about the security-related features:
-    * https://wiki.dolibarr.org/index.php?title=Security_information
+*	Documentation from Dolibarr about the security-related features:  
+	* https://wiki.dolibarr.org/index.php?title=Security_information
 *	Documentation from Dolibarr to set up secure email communications from the system:
 	* https://wiki.dolibarr.org/index.php/Setup_EMails
 *	Documentation from Dolibarr on their Security policy and scope for possible vulnerabilities and contributions:
@@ -110,7 +109,7 @@ Few security features to keep the supervisor system secure from attackers are as
 
 ### Reflection
 
-Each of the three team members contributed a scenario and use case diagram. Before and after our instructor check-in, we had two meetings to go through the project. To stay on task, we used a [Project Board]() and Slack for communication. We intended to finish our tasks with enough time for each team member. Given that we are all new to this kind of modeling, there have been a lot of discussions. We worked well as a team to complete both of these team project submissions, but we were always looking for ways to get better for the following round.
+Each of the three team members contributed a scenario and use case diagram. Before and after our instructor check-in, we had two meetings to go through the project. To stay on task, we used a [Project Board](https://github.com/users/SreeharshaMorampudi/projects/3) and Slack for communication. We intended to finish our tasks with enough time for each team member. Given that we are all new to this kind of modeling, there have been a lot of discussions. We worked well as a team to complete both of these team project submissions, but we were always looking for ways to get better for the following round.
 
 Individual Contributions:
 * Sreeharsha Morampudi: Building Use case diagrams and changing making a few modifications to teammates’ diagrams, Analyzing the security issues, Documenting the Requirements for SSE and sharing it on GitHub, scheduling Team meetings, and dividing the tasks.
@@ -123,3 +122,6 @@ Individual Contributions:
 * https://www.docusign.com/trust/security/product-security
 * https://wiki.dolibarr.org/index.php?title=Security_information
 * https://wiki.dolibarr.org/index.php/Setup_EMails
+
+
+###### [Return to Top](#requirements-for-system-security-engineering)
