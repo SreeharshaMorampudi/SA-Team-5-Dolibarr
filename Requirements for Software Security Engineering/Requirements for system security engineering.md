@@ -32,7 +32,7 @@ These attacks can be prevented by implementing the following features:
 5.   Password management  
 
 ### UML Diagram
-![Case1 Diagram](https://github.com/SreeharshaMorampudi/SA-Team-5-Dolibarr/blob/main/Requirements%20for%20Software%20Security%20Engineering/usecase1final.drawio.png) 
+![Case1 Diagram](https://github.com/SreeharshaMorampudi/SA-Team-5-Dolibarr/blob/main/Requirements%20for%20Software%20Security%20Engineering/usecase1final.drawio%20(1).png)) 
 
 
 #### Alignment of Security Requirements with Advertised Features
@@ -86,7 +86,7 @@ Few security features to keep the supervisor system secure from attackers are as
 2.	The links should be encrypted.
 
 ### UML Diagram
-![Case3 Diagram](https://github.com/SreeharshaMorampudi/SA-Team-5-Dolibarr/blob/main/Requirements%20for%20Software%20Security%20Engineering/usecase02.drawio.png)
+![Case3 Diagram](https://github.com/SreeharshaMorampudi/SA-Team-5-Dolibarr/blob/main/Requirements%20for%20Software%20Security%20Engineering/usecase02.drawio%20(1).png)
 
 
 #### Alignment of Security Requirements with Advertised Features
