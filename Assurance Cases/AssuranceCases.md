@@ -34,7 +34,7 @@ As files are shared using links, All communications to and from Dolibarr are sec
 
 
 ## Assurance Case 3:
-![Assurance Case 3 Diagram](https://github.com/SreeharshaMorampudi/SA-Team-5-Dolibarr/blob/main/Assurance%20Cases/Assurance%20case%20Diagram%203.2.jpg)
+![Assurance Case 3 Diagram](https://github.com/SreeharshaMorampudi/SA-Team-5-Dolibarr/blob/main/Assurance%20Cases/Assurance%20Case%20Diagram%203.3.jpg)
 
 ### Evidence 1: Counter SQL Injection/XSS attacks
 Dolibarr released updated versions to counter the SQL Injection/ XSS attacks in versions lower than 3.5.3.
