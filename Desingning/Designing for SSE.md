@@ -2,7 +2,7 @@
 ## Threat Modeling
 ### Data Flow Diagram for Dolibarr CRM
 [Data Flow Diagram](https://github.com/SreeharshaMorampudi/SA-Team-5-Dolibarr/blob/main/Desingning/DFD.PNG)  
-[HTML Threat Model Report](https://github.com/SreeharshaMorampudi/SA-Team-5-Dolibarr/blob/main/Desingning/Threat%20Report%20Final.htm)
+[HTML Threat Model Report](https://github.com/SreeharshaMorampudi/SA-Team-5-Dolibarr/blob/main/Desingning/Threat%20Model%20Report.htm)
 ## Observations
 ### Denial of Service Threats  
 ##### Observations:
