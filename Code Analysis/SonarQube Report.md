@@ -49,9 +49,10 @@ Solution: DES is an outdated Cipher algorithm, we should use AES instead of DES.
 ### Change this code to use a stronger protocol
 ![image](https://user-images.githubusercontent.com/100978590/205524564-ce248bcb-f3f9-4680-acad-8a33f0ba31e3.png)
 dolibarr-develop/htdocs/includes/swiftmailer/lib/classes/Swift/Transport/StreamBuffer.php  
-
+Solution: Force the user to use the latest version. Force the user to makesure to use HTTPS.
 ### Change this code to use a stronger protocol
-![image](https://user-images.githubusercontent.com/100978590/205524589-15304f35-a388-43f7-9798-673fdb2dc2a2.png)
+![image](https://user-images.githubusercontent.com/100978590/205524589-15304f35-a388-43f7-9798-673fdb2dc2a2.png)  
+Solution: Force the user to use the latest version. Force the user to makesure to use HTTPS.
 
 # 4. CWE-297: Improper Validation of Certificate with Host Mismatch
 ### Enable server hostname verification on this SSL/TLS connection
