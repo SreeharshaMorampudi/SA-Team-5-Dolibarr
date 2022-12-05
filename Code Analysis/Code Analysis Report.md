@@ -18,12 +18,14 @@ As we mentioned earlier, we have decided to manually review the code using the m
 #### [CWE 95	Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')](https://cwe.mitre.org/data/definitions/95.html)
 #### [CWE 96	Improper Neutralization of Directives in Statically Saved Code ('Static Code Injection')](https://cwe.mitre.org/data/definitions/96.html)
 #### [CWE 98	Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion')](https://cwe.mitre.org/data/definitions/98.html)
-The Above four CWEs were mitigated using EscapeShellArgs and EscapeShellCommands. ![Git Ref](https://github.com/kacperszurek/exploits/blob/master/GitList/exploit-bypass-php-escapeshellarg-escapeshellcmd.md) ![Code Reference](https://user-images.githubusercontent.com/100978590/205633037-2a5dcbad-d029-429f-802e-58b2c4b7b21d.png)
+The Above four CWEs were mitigated using EscapeShellArgs and EscapeShellCommands.  ![Git Ref](https://github.com/kacperszurek/exploits/blob/master/GitList/exploit-bypass-php-escapeshellarg-escapeshellcmd.md) ![Code Reference](https://user-images.githubusercontent.com/100978590/205633037-2a5dcbad-d029-429f-802e-58b2c4b7b21d.png)(![image](https://user-images.githubusercontent.com/100978590/205640849-d09f01b7-81ec-402f-b079-c589b37e6e9d.png))
 #### [CWE 209	Generation of Error Message Containing Sensitive Information](https://cwe.mitre.org/data/definitions/209.html)
-No Echo statements in any of the Catch, instead they are using Syslogs to save logs files in the server
+No Echo statements in any of the Catch blocks, instead they are using Syslogs to save logs files in the server. The developer does not leak sensitive information after catching errors throughout the codebase. ![Barcode.php](https://user-images.githubusercontent.com/100978590/205641382-d5f1a0ed-1668-4129-97e5-7fa6734964da.png)
+![Emailcollector.php](https://user-images.githubusercontent.com/100978590/205641482-ca6c92f2-948c-442b-8e33-3ca3354f1b02.png)
+
 
 #### [CWE 211	Externally-Generated Error Message Containing Sensitive Information](https://cwe.mitre.org/data/definitions/211.html)
-There is no SQL query disclosure when we test that web application.
+There is no SQL query disclosure that has been observed when we test that web application.
 #### [CWE 434	Unrestricted Upload of File with Dangerous Type](https://cwe.mitre.org/data/definitions/434.html)
 Sometimes they are checking the type and sometimes they are not.
 #### [CWE 453	Insecure Default Variable Initialization](https://cwe.mitre.org/data/definitions/453.html)
@@ -46,7 +48,6 @@ Admin could be exploited through serialized object.
 Not Saving the files to global variables.
 
 ### Summary of Key Findings
-
 
 
 ### Project Task Board
