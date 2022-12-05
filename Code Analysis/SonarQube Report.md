@@ -5,23 +5,23 @@
 ![image](https://user-images.githubusercontent.com/100978590/205523906-aa82a31e-0f54-4a06-88e1-8d1cfc605f47.png)  
 ![image](https://user-images.githubusercontent.com/100978590/205523999-05a7c1be-e229-4cdc-971c-6e2901b170d2.png)
 
-Solution: Force the user to use the latest version. Force the user to makesure to use HTTPS.
+Solution: Force the user to use the latest version. Force the user to makesure to use HTTPS.  
 dolibarr-develop/htdocs/includes/swiftmailer/lib/classes/Swift/Transport/StreamBuffer.php
 
 ### Enable server certificate validation on this SSL/TLS connection
 ![image](https://user-images.githubusercontent.com/100978590/205523685-5be16003-c1d1-4f5f-81ca-a2be800ad474.png)  
 dolibarr-develop/htdocs/includes/restler/framework/Luracast/Restler/Resources.php  
-Solution: Should be made as TRUE and Force the browser to check verify the TLS cert.
+Solution: Should be made as TRUE and Force the browser to check verify the TLS cert.  
 
 ### Enable server certificate validation on this SSL/TLS connection
 ![image](https://user-images.githubusercontent.com/100978590/205524032-e09010d5-4c0a-4048-b89a-c9a4afad2110.png)  
 dolibarr-develop/htdocs/includes/tecnickcom/tcpdf/include/tcpdf_static.php  
-Solution: Should be made as TRUE and Force the browser to check verify the TLS cert.
+Solution: Should be made as TRUE and Force the browser to check verify the TLS cert.  
 
 ### Enable server certificate validation on this SSL/TLS connection
 ![image](https://user-images.githubusercontent.com/100978590/205524105-0040f4ca-e920-4e5b-b358-3a0c025b8179.png)  
 dolibarr-develop/htdocs/includes/tecnickcom/tcpdf/include/tcpdf_static.php  
-Solution: Should be made as TRUE and Force the browser to check verify the TLS cert.
+Solution: Should be made as TRUE and Force the browser to check verify the TLS cert.  
 
 
 # 2. CWE-327: Use of a Broken or Risky Cryptographic Algorithm  
