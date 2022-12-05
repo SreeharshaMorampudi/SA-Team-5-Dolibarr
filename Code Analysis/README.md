@@ -5,11 +5,13 @@
 ![image](https://user-images.githubusercontent.com/100978590/205523906-aa82a31e-0f54-4a06-88e1-8d1cfc605f47.png)  
 ![image](https://user-images.githubusercontent.com/100978590/205523999-05a7c1be-e229-4cdc-971c-6e2901b170d2.png)
 
+Solution: Force the user to use the latest version. Force the user to makesure to use HTTPS.
 dolibarr-develop/htdocs/includes/swiftmailer/lib/classes/Swift/Transport/StreamBuffer.php
 
 ### Enable server certificate validation on this SSL/TLS connection.
 ![image](https://user-images.githubusercontent.com/100978590/205523685-5be16003-c1d1-4f5f-81ca-a2be800ad474.png)  
 dolibarr-develop/htdocs/includes/restler/framework/Luracast/Restler/Resources.php
+Solution: Should be made as TRUE and Force the browser to check verify the TLS cert.
 
 ### Enable server certificate validation on this SSL/TLS connection.
 ![image](https://user-images.githubusercontent.com/100978590/205524032-e09010d5-4c0a-4048-b89a-c9a4afad2110.png)  
@@ -23,6 +25,7 @@ dolibarr-develop/htdocs/includes/tecnickcom/tcpdf/include/tcpdf_static.php
 ### Use a strong cipher algorithm  
 ![image](https://user-images.githubusercontent.com/100978590/205524224-cf3b9d45-2009-4f06-be1e-0f8871e552d9.png)  
 dolibarr-develop/htdocs/includes/swiftmailer/lib/classes/Swift/Transport/Esmtp/Auth/NTLMAuthenticator.php  
+Sol: DES is an outdated Cipher algorithm, we should use AES instead of DES.
 ### Use secure mode and padding scheme.
 ![image](https://user-images.githubusercontent.com/100978590/205524310-2ca38381-9fb7-4062-8346-c23530222ed1.png)
 dolibarr-develop/htdocs/includes/swiftmailer/lib/classes/Swift/Transport/Esmtp/Auth/NTLMAuthenticator.php  
@@ -47,19 +50,25 @@ dolibarr-develop/htdocs/includes/swiftmailer/lib/classes/Swift/Transport/StreamB
 ### Enable server hostname verification on this SSL/TLS connection.
 ![image](https://user-images.githubusercontent.com/100978590/205524645-93aeb87a-7267-46ef-92c3-d55ab6ff8198.png)
 dolibarr-develop/htdocs/includes/tecnickcom/tcpdf/include/tcpdf_static.php
+
 ### Enable server hostname verification on this SSL/TLS connection.
 ![image](https://user-images.githubusercontent.com/100978590/205524686-42be2671-71b4-46fe-8dd8-2bf6de2c5603.png)
 dolibarr-develop/htdocs/includes/tecnickcom/tcpdf/include/tcpdf_static.php
+Solution: Make it as TRUE to verify if the HostName is not the malicious one.
 
 # 5. CWE-521:
 ### Provide username and password to authenticate the connection.
 ![image](https://user-images.githubusercontent.com/100978590/205524768-8adfe4c9-8111-4447-acf4-6fc20fc56fd6.png)
 dolibarr-develop/htdocs/core/class/ldap.class.php
+Sol: Check if the user is logged in to authenticate this page.
 
 # 6. CWE-611:
 ### Disable access to external entities in XML parsing.
 ![image](https://user-images.githubusercontent.com/100978590/205524823-d125f515-05f5-4483-bb23-3d62ef67386c.png)
 dolibarr-develop/htdocs/includes/symfony/var-dumper/Tests/Caster/XmlReaderCasterTest.php  
+prob: Reading the XML files without sanitization, which the attacker could include malicious external entities that may cause the command injections.
+Sol: Do some sanitization to avoid external entities in XML(XXE) Parsing.
+
 
 # 7. CWE-780:
 ### Use secure mode and padding scheme.
