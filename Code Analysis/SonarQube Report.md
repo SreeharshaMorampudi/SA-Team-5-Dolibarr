@@ -10,16 +10,19 @@ dolibarr-develop/htdocs/includes/swiftmailer/lib/classes/Swift/Transport/StreamB
 
 ### Enable server certificate validation on this SSL/TLS connection
 ![image](https://user-images.githubusercontent.com/100978590/205523685-5be16003-c1d1-4f5f-81ca-a2be800ad474.png)  
-dolibarr-develop/htdocs/includes/restler/framework/Luracast/Restler/Resources.php
+dolibarr-develop/htdocs/includes/restler/framework/Luracast/Restler/Resources.php  
 Solution: Should be made as TRUE and Force the browser to check verify the TLS cert.
 
 ### Enable server certificate validation on this SSL/TLS connection
 ![image](https://user-images.githubusercontent.com/100978590/205524032-e09010d5-4c0a-4048-b89a-c9a4afad2110.png)  
-dolibarr-develop/htdocs/includes/tecnickcom/tcpdf/include/tcpdf_static.php
+dolibarr-develop/htdocs/includes/tecnickcom/tcpdf/include/tcpdf_static.php  
+Solution: Should be made as TRUE and Force the browser to check verify the TLS cert.
 
 ### Enable server certificate validation on this SSL/TLS connection
 ![image](https://user-images.githubusercontent.com/100978590/205524105-0040f4ca-e920-4e5b-b358-3a0c025b8179.png)  
 dolibarr-develop/htdocs/includes/tecnickcom/tcpdf/include/tcpdf_static.php  
+Solution: Should be made as TRUE and Force the browser to check verify the TLS cert.
+
 
 # 2. CWE-327: Use of a Broken or Risky Cryptographic Algorithm  
 ### Use a strong cipher algorithm  
