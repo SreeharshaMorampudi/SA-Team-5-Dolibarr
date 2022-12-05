@@ -14,6 +14,36 @@ The links provided below will take you to the reports the scanning tool produced
 
 ### Manual Code Review  
 As we mentioned earlier, we have decided to manually review the code using the most regular Comman Weaknesses in Softwares that are written in PHP which are available in CWE website. Our Findings on some of those are listed below.  
+#### [CWE	88	Improper Neutralization of Argument Delimiters in a Command ('Argument Injection')]()
+#### [CWE 95	Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')]()
+#### [CWE 96	Improper Neutralization of Directives in Statically Saved Code ('Static Code Injection')]()
+#### [CWE 98	Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion')]()
+Not there till here(Mitigated) EscapeShellArgs
+#### [CWE 209	Generation of Error Message Containing Sensitive Information]()
+No Echo statements in any of the Catch, instead they are using Syslogs to save logs files in the server
+
+#### [CWE 211	Externally-Generated Error Message Containing Sensitive Information]()
+There is no SQL query disclosure when we test that web application.
+#### [CWE 434	Unrestricted Upload of File with Dangerous Type]()
+Sometimes they are checking the type and sometimes they are not.
+#### [CWE 453	Insecure Default Variable Initialization]()
+Not found anything
+#### [CWE 454	External Initialization of Trusted Variables or Data Stores]()
+Not found anything
+#### [CWE 457	Use of Uninitialized Variable]()
+Hard to detect as there are many variables.
+#### [CWE 470	Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')]()
+User cannot supply the name of the class manually to get an object.
+#### [CWE	473	PHP External Variable Modification]()
+
+#### [CWE	474	Use of Function with Inconsistent Implementations]()
+#### [CWE	484	Omitted Break Statement in Switch]()
+All Switch statements have break statemants in them.
+#### [CWE	502	Deserialization of Untrusted Data]()
+Admin could be exploited through serialized object.
+#### [CWE	595	Comparison of Object References Instead of Object Contents]()
+#### [CWE	616	Incomplete Identification of Uploaded File Variables (PHP)]()
+Not Saving the files to global variables.
 
 ### Summary of Key Findings
 
