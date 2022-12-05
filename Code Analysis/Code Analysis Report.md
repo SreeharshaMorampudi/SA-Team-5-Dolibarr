@@ -18,7 +18,8 @@ As we mentioned earlier, we have decided to manually review the code using the m
 #### [CWE 95	Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')](https://cwe.mitre.org/data/definitions/95.html)
 #### [CWE 96	Improper Neutralization of Directives in Statically Saved Code ('Static Code Injection')](https://cwe.mitre.org/data/definitions/96.html)
 #### [CWE 98	Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion')](https://cwe.mitre.org/data/definitions/98.html)
-The Above four CWEs were mitigated using EscapeShellArgs and EscapeShellCommands.  ![Git Ref](https://github.com/kacperszurek/exploits/blob/master/GitList/exploit-bypass-php-escapeshellarg-escapeshellcmd.md) ![Code Reference](https://user-images.githubusercontent.com/100978590/205633037-2a5dcbad-d029-429f-802e-58b2c4b7b21d.png)(![image](https://user-images.githubusercontent.com/100978590/205640849-d09f01b7-81ec-402f-b079-c589b37e6e9d.png))
+The Above four CWEs were mitigated using EscapeShellArgs and EscapeShellCommands.  ![Git Ref](https://github.com/kacperszurek/exploits/blob/master/GitList/exploit-bypass-php-escapeshellarg-escapeshellcmd.md) 
+![Code Reference](https://user-images.githubusercontent.com/100978590/205633037-2a5dcbad-d029-429f-802e-58b2c4b7b21d.png)(![image](https://user-images.githubusercontent.com/100978590/205640849-d09f01b7-81ec-402f-b079-c589b37e6e9d.png))
 #### [CWE 209	Generation of Error Message Containing Sensitive Information](https://cwe.mitre.org/data/definitions/209.html)
 No Echo statements in any of the Catch blocks, instead they are using Syslogs to save logs files in the server. The developer does not leak sensitive information after catching errors throughout the codebase. ![Barcode.php](https://user-images.githubusercontent.com/100978590/205641382-d5f1a0ed-1668-4129-97e5-7fa6734964da.png)
 ![Emailcollector.php](https://user-images.githubusercontent.com/100978590/205641482-ca6c92f2-948c-442b-8e33-3ca3354f1b02.png)
@@ -29,26 +30,26 @@ There is no SQL query disclosure that has been observed when we test that web ap
 #### [CWE 434	Unrestricted Upload of File with Dangerous Type](https://cwe.mitre.org/data/definitions/434.html)
 Sometimes they are checking the type and sometimes they are not.
 #### [CWE 453	Insecure Default Variable Initialization](https://cwe.mitre.org/data/definitions/453.html)
-Not found anything
+We are unable to find anything that is related to this CWE.
 #### [CWE 454	External Initialization of Trusted Variables or Data Stores](https://cwe.mitre.org/data/definitions/454.html)
-Not found anything
+We are unable to find anything that is related to this CWE.
 #### [CWE 457	Use of Uninitialized Variable](https://cwe.mitre.org/data/definitions/457.html)
 Hard to detect as there are many variables.
 #### [CWE 470	Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')](https://cwe.mitre.org/data/definitions/470.html)
 User cannot supply the name of the class manually to get an object.
-#### [CWE	473	PHP External Variable Modification](https://cwe.mitre.org/data/definitions/473.html)
-
 #### [CWE	474	Use of Function with Inconsistent Implementations](https://cwe.mitre.org/data/definitions/474.html)
 #### [CWE	484	Omitted Break Statement in Switch](https://cwe.mitre.org/data/definitions/484.html)
 All Switch statements have break statemants in them.
 #### [CWE	502	Deserialization of Untrusted Data](https://cwe.mitre.org/data/definitions/502.html)
 Admin could be exploited through serialized object.
-#### [CWE	595	Comparison of Object References Instead of Object Contents](https://cwe.mitre.org/data/definitions/595.html)
 #### [CWE	616	Incomplete Identification of Uploaded File Variables (PHP)](https://cwe.mitre.org/data/definitions/616.html)
 Not Saving the files to global variables.
 
-### Summary of Key Findings
+### Summary of Key Findings  
+From the Automated code scanning tools and Manual code review, we can see that there are nothing much severe issues that lead to breaking the functionality of the Dolibarr software, we have found some key issues related to certificate valination, Cryptographic Algorithms that need to be updated as per the latest trends. We are planning to contribute our findings to Dolibarr in updating the scripts to exclude all the vulnerabilities that were identified in our code review.
 
+### Team Collaboration  
+Since this assignment was announced during the Thanks Giving Holiday Break, despite vacations we have planned to do the code review of our project. We are able to separate the tasks individually to accomplish this assignment on time. Initially, there was lot of confusion on how to start and where to start with the code review. But Professor's lectures and Team checkin meetings helped us a lot in clearing those doubts and move forward with ease. SonarQube and SonarCloud made our tasks easy by automatically scanning the Dolibarr code repository and detecting all the possible issues. From those results we have divided our tasks equally and worked on this assignment. Our team's great communication and coordination helped in accomplishing this task.
 
 ### Project Task Board
 
