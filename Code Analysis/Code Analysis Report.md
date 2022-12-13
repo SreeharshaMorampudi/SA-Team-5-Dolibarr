@@ -18,7 +18,7 @@ As we mentioned earlier, we have decided to manually review the code using the m
 #### [CWE 95	Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')](https://cwe.mitre.org/data/definitions/95.html)
 #### [CWE 96	Improper Neutralization of Directives in Statically Saved Code ('Static Code Injection')](https://cwe.mitre.org/data/definitions/96.html)
 #### [CWE 98	Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion')](https://cwe.mitre.org/data/definitions/98.html)
-The Above four CWEs were mitigated using EscapeShellArgs and EscapeShellCommands.  ![Git Ref](https://github.com/kacperszurek/exploits/blob/master/GitList/exploit-bypass-php-escapeshellarg-escapeshellcmd.md) 
+The Above four CWEs were mitigated using EscapeShellArgs and EscapeShellCommands.  [Git Ref](https://github.com/kacperszurek/exploits/blob/master/GitList/exploit-bypass-php-escapeshellarg-escapeshellcmd.md) 
 ![Code Reference](https://user-images.githubusercontent.com/100978590/205633037-2a5dcbad-d029-429f-802e-58b2c4b7b21d.png)(![image](https://user-images.githubusercontent.com/100978590/205640849-d09f01b7-81ec-402f-b079-c589b37e6e9d.png))
 #### [CWE 209	Generation of Error Message Containing Sensitive Information](https://cwe.mitre.org/data/definitions/209.html)
 No Echo statements in any of the Catch blocks, instead they are using Syslogs to save logs files in the server. The developer does not leak sensitive information after catching errors throughout the codebase. ![Barcode.php](https://user-images.githubusercontent.com/100978590/205641382-d5f1a0ed-1668-4129-97e5-7fa6734964da.png)
@@ -37,13 +37,23 @@ We are unable to find anything that is related to this CWE.
 Hard to detect as there are many variables.
 #### [CWE 470	Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')](https://cwe.mitre.org/data/definitions/470.html)
 User cannot supply the name of the class manually to get an object.
-#### [CWE	474	Use of Function with Inconsistent Implementations](https://cwe.mitre.org/data/definitions/474.html)
 #### [CWE	484	Omitted Break Statement in Switch](https://cwe.mitre.org/data/definitions/484.html)
 All Switch statements have break statemants in them.
 #### [CWE	502	Deserialization of Untrusted Data](https://cwe.mitre.org/data/definitions/502.html)
-Admin could be exploited through serialized object.
+#### Admin could be exploited through serialized object.  
+getListOfExtrafields() function in the class "htdocs/api/class api_setup.class.php" will call the vulnerable function jsonOrUnserialize().
+A normal user could exploit the User Boundary by storing a malicious serialized object in the database which the admin will retrieve that object and execute that leading to code injection. In other words, storing the malicious data could cause privilege escalation for the normal user.
+The admin user is vulnerable to deserialized objects by retrieving JSON/Serialized objects from the database. Users could manipulate this object by injecting malicious JSON/serialized objects in the extra field parameter, as shown in the below screenshots. Therefore the returned list will be executed in the admin workspace, causing intentional code injection  
+![image](https://user-images.githubusercontent.com/100978590/207442518-4f2fcb19-3934-40ef-9f93-8a80e38ef550.png)
+![image](https://user-images.githubusercontent.com/100978590/207442612-c78a2348-1e5f-491e-a5b4-209a8801ae01.png)
+![image](https://user-images.githubusercontent.com/100978590/207442730-03010ec8-9d74-444e-a867-fa07b1974cb3.png)
+
 #### [CWE	616	Incomplete Identification of Uploaded File Variables (PHP)](https://cwe.mitre.org/data/definitions/616.html)
 Not Saving the files to global variables.
+#### [Testing Injection Attacks with old Dataset]()  
+![image](https://user-images.githubusercontent.com/100978590/207441007-d73d68ce-e19f-4de5-8c07-16d6e3b95dfd.png)  
+There is a function testSqlAndScriptInject in the file htdocs/main.inc.php. This function is used at different places of the software to check if there are any signs of injection attacks.  
+Even though they are using this function to check the injections, the datasets that are used are very limited and doesnot cover the latest patterns of Injection attacks. We can refer to XSS scripts on GitHub to get more possible patterns and include them as well to make it more secure.
 
 ### Summary of Key Findings  
 From the Automated code scanning tools and Manual code review, we can see that there are nothing much severe issues that lead to breaking the functionality of the Dolibarr software, we have found some key issues related to certificate valination, Cryptographic Algorithms that need to be updated as per the latest trends. We are planning to contribute our findings to Dolibarr in updating the scripts to exclude all the vulnerabilities that were identified in our code review.
